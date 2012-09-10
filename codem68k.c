@@ -799,7 +799,7 @@ char	*s; {
 #endif
 		strcat(buf, s);
 	p = buf + strlen(buf) - 1;
-	rc = typeof(s);
+	rc = typeof_(s);
 	delaft = (rc == 'c');
 	if (rc == 'c' || rc == 's') {
 		ex = 0;

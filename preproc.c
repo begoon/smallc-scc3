@@ -72,7 +72,7 @@ doasm ()
 {
 	cmode = 0;
 	FOREVER {
-		inline ();
+		inline_ ();
 		if (match ("#endasm"))
 			break;
 		if (feof (input))
@@ -127,7 +127,7 @@ int ifdef;
 ifline()
 {
 	FOREVER {
-		inline();
+		inline_();
 		if (feof(input)) return(1);
 		if (match("#ifdef")) {
 			doifdef(YES);
@@ -218,7 +218,7 @@ cpp ()
 					}
 				} else {
 					if (ch () == 0)
-						inline ();
+						inline_ ();
 					else
 						inchar ();
 					if (feof (input))

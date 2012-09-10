@@ -51,7 +51,7 @@ int	argc, *argv;
 		usage();
 	while (p) {
 		errfile = 0;
-		if (typeof(p) == 'c') {
+		if (typeof_(p) == 'c') {
 			glbptr = STARTGLB;
 			locptr = STARTLOC;
 			wsptr = ws;
@@ -266,7 +266,7 @@ errorsummary ()
 	pl (errcnt ? "Error(s)" : "No errors");
 }
 
-typeof(s)
+typeof_(s)
 char	*s; {
 	s += strlen(s) - 2;
 	if (*s == '.')

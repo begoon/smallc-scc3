@@ -82,7 +82,7 @@ kill ()
 	line[lptr] = 0;
 }
 
-inline ()
+inline_ ()
 {
 	int	k;
 	FILE	*unit;
@@ -129,7 +129,7 @@ inbyte ()
 inchar ()
 {
 	if (ch () == 0)
-		inline ();
+		inline_ ();
 	if (feof (input))
 		return (0);
 	return (gch ());
