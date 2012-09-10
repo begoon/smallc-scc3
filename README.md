@@ -6,3 +6,8 @@ from http://www.gtoal.com/compilers101/small_c/small-c/.
 
 This fork has no functional changes, only minor fixes to build on modern
 compilers.
+
+Build on Windows:
+
+    cd windows
+    nmake
